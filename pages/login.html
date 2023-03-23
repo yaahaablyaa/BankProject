@@ -22,7 +22,11 @@
     </div>
 
     <script>
-        
+        let emInp = document.querySelector('input')
+
+        let locaData = JSON.parse(localStorage.getItem('user'))
+
+        emInp.value = locaData.email
     </script>
 </body>
 
