@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
+header {
+    font-weight: 500;
+    height: 70px;
+    background-color: #F0F0F0;
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: auto;
+    }
+}
+
+.logout_btn {
+    cursor: pointer;
+    margin: auto;
+}
+
+.info {
+    padding: 50px 50px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.welcom {
+    width: 800px;
+    height: 59px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 20px;
+}
+
+.email {
+    width: 204px;
+    height: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.Card_main {
+    width: 200px;
+    height: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 74px 0px 0px;
+}
+
+.card_cont {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.block_cart {
+    width: 282px;
+    height: 160px;
+    margin-top: 30px;
+    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+}
+
+.block_cart:nth-child(2) {
+    background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+}
+
+.block_cart:nth-child(3) {
+    background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
+}
+
+.block_cart:nth-child(4) {
+    background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
+}
+
+.all_card {
+    width: 300px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    display: block;
+    margin-top: 20px;
+    color: #003cff;
+}
+
+.valuta {
+    display: block;
+    margin-top: 70px !important;
+}
+
+.a {
+    margin-top: 74px;
+    width: 266px;
+    height: 29px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+table {
+    display: inline-table;
+    width: 100%;
+    margin-top: 20px;
+
+    thead th {
+        text-align: start;
+    }
+
+    tbody {
+        margin-top: 20px;
+    }
+}
+
+.all_transactions {
+    width: 300px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    display: block;
+    margin-top: 20px;
+    color: #003cff;
+}
+
+.form {
+    margin: 100px auto;
+    width: 530px;
+    text-align: center;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 20px 0px;
+        input {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 17px 20px;
+        }
+        button {
+            all: unset;
+            background-color: #0047FF;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 17px 0px;
+            border-radius: 10px;
+        }
+    }
+}
