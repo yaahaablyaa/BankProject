@@ -1,20 +1,35 @@
 {
-  "users": [
-    {
-      "email": "dsarifkulo021@gmail.com",
-      "name": "Daler",
-      "surname": "Sharifkulov",
-      "password": "1234",
-      "id": 1
-    },
-    {
-      "email": "madina@gmail.com",
-      "name": "Madina",
-      "surname": "Adams",
-      "password": "7777",
-      "id": 2
-    }
-  ],
-  "cards": [],
-  "transactions": []
+	"users": [
+		{
+			"email": "dsarifkulo021@gmail.com",
+			"name": "Daler",
+			"surname": "Sharifkulov",
+			"password": "1234",
+			"id": 1
+		},
+		{
+			"email": "madina@gmail.com",
+			"name": "Madina",
+			"surname": "Adams",
+			"password": "7777",
+			"id": 2
+		}
+	],
+	"cards": [
+		{
+			"id": 124129786312,
+			"user_id": 1,
+			"name": "visa",
+			"currency": "USD",
+			"total": 10000
+		},
+		{
+			"id": 987689376123,
+			"user_id": 2,
+			"name": "UzCard",
+			"currency": "UZS",
+			"total": 100000
+		}
+	],
+	"transactions": []
 }
