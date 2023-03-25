@@ -13,7 +13,7 @@
 
     <div class="form">
         <h1>Войти в аккаунт</h1>
-        <form action="">
+        <form name="login">
             <input type="email" placeholder="Почта" name="email">
             <input type="password" placeholder="Пароль" name="password">
             <button>Продолжить</button>
@@ -21,12 +21,40 @@
         <a href="/pages/reg.html">Регистрация</a>
     </div>
 
-    <script>
-        let emInp = document.querySelector('input')
+    <script type="module" >
+        import axios from 'axios'
+        let form = document.forms.login
 
-        let locaData = JSON.parse(localStorage.getItem('user'))
+        form.onsubmit = (event) => {
+            event.preventDefault();
 
-        emInp.value = locaData.email
+            let user = {}
+
+            let fm = new FormData(form)
+
+            fm.forEach((value, key) => {
+                user[key] = value
+            })
+
+            axios.get(import.meta.env.VITE_BASE_URL + "/users?email=" + user.email)
+                .then(res => {
+
+                    if(res.status === 200 || res.status === 201) {
+                        if(res.data.length !== 0) {
+                            let resUser = res.data[0]
+
+                            if(resUser.password === user.password) {
+                                location.assign('/index.html')
+                            } else {
+                                alert('Wrong password')
+                            }
+                        } else {
+                            alert('Такой аккаунт не зарегистрирован')
+                        }
+                    }
+                })
+
+        }
     </script>
 </body>
 

@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "email": "dsarifkulo021@gmail.com",
+      "name": "Daler",
+      "surname": "Sharifkulov",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "email": "madina@gmail.com",
+      "name": "Madina",
+      "surname": "Adams",
+      "password": "7777",
+      "id": 2
+    }
+  ],
+  "cards": [],
+  "transactions": []
+}
