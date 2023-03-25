@@ -13,20 +13,50 @@
 
     <div class="form">
         <h1>Войти в аккаунт</h1>
-        <form action="">
-            <input type="email" placeholder="Почта" name="email">
-            <input type="password" placeholder="Пароль" name="password">
+        <form name="login">
+            <input type="email" placeholder="Почта" name="email" id="email">
+            <input type="password" placeholder="Пароль" name="password" id="password">
             <button>Продолжить</button>
+            <p id="result">Welcome login</p>
         </form>
         <a href="/pages/reg.html">Регистрация</a>
     </div>
 
     <script>
-        let emInp = document.querySelector('input')
+        let email = document.querySelector("#email"),
+            password = document.querySelector("#password"),
+            result = document.querySelector("#result"),
+            locaData = JSON.parse(localStorage.getItem('user'))
+        let form = document.forms.login
 
-        let locaData = JSON.parse(localStorage.getItem('user'))
+        form.onsubmit = (e) => {
+            loginFun(e)
+        }
 
-        emInp.value = locaData.email
+        email.value = locaData.email
+
+        function loginFun(event) {
+            event.preventDefault()
+
+            let user = localStorage.getItem(email)
+            let data = JSON.parse(user)
+            console.log(data)
+
+                // if(user == null){
+                //     result.innerHTML = "wrong email"
+                // } else if (email == data.email && password == data.password){
+                //     result.innerHTML = "logged in"
+                // } else{
+                //     result.innerHTML = "wrong password "
+                // }
+
+            if (password.value === locaData.password) {
+                window.location.href = "/index.html"
+            } else {
+                alert("You need to register in the first")
+            }
+        }
+
     </script>
 </body>
 
