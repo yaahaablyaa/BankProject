@@ -54,7 +54,16 @@ nav {
     margin: 0 auto;
 }
 
-.welcom {
+.welcome {
+    width: 800px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 20px;
+}
+
+.myWallet {
     width: 800px;
     font-style: normal;
     font-weight: bold;
@@ -80,17 +89,17 @@ nav {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    margin: 74px 0px 0px;
+    margin: 44px 0px 0px;
 }
 
 .card_cont {
     display: flex;
-    align-items: center;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 22px;
 }
 
 .block_cart {
-    width: 282px;
+    width: 300px;
     height: 160px;
     margin-top: 30px;
     background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
@@ -167,16 +176,20 @@ table {
     margin: 100px auto;
     width: 530px;
     text-align: center;
+
     form {
         display: flex;
         flex-direction: column;
         gap: 12px;
         margin: 20px 0px;
-        input {
+
+        input,
+        select {
             border: 1px solid black;
             border-radius: 10px;
             padding: 17px 20px;
         }
+
         button {
             all: unset;
             background-color: #0047FF;
@@ -185,10 +198,39 @@ table {
             font-weight: 600;
             padding: 17px 0px;
             border-radius: 10px;
+
             a {
                 color: white;
                 text-decoration: none;
             }
         }
     }
+}
+
+.addWallet {
+    width: 438px;
+    height: 56px;
+    color: white;
+    background: #0047FF;
+    border-radius: 10px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 45px;
+}
+
+.addTransactions {
+    width: 438px;
+    height: 56px;
+    color: white;
+    background: #0047FF;
+    border-radius: 10px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 45px;
 }

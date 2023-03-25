@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "email": "dsarifkulo021@gmail.com",
+      "name": "Daler",
+      "surname": "Sharifkulov",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "email": "madina@gmail.com",
+      "name": "Madina",
+      "surname": "Adams",
+      "password": "7777",
+      "id": 2
+    },
+    {
+      "email": "asadhamrakulov4@gmail.com",
+      "name": "Asad",
+      "surname": "Xamrakulov",
+      "password": "12345",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "id": 124129786312,
+      "user_id": 1,
+      "name": "visa",
+      "currency": "USD",
+      "total": 10000
+    },
+    {
+      "id": 987689376123,
+      "user_id": 2,
+      "name": "UzCard",
+      "currency": "UZS",
+      "total": 100000
+    },
+    {
+      "user_id": 3,
+      "card_name": "MasterCard",
+      "currency": "AMD",
+      "total": "12000",
+      "id": 987689376124
+    },
+    {
+      "user_id": 3,
+      "card_name": "Visa",
+      "currency": "ANG",
+      "total": "15000",
+      "id": 987689376125
+    },
+    {
+      "user_id": 3,
+      "card_name": "MasterCard",
+      "currency": "BSD",
+      "total": "150000",
+      "id": 987689376126
+    },
+    {
+      "user_id": 3,
+      "card_name": "MasterCard",
+      "currency": "BSD",
+      "total": "150000",
+      "id": 987689376127
+    }
+  ],
+  "transactions": [
+    {
+      "user_id": 3,
+      "tra_name": "Visa",
+      "curren": "15000",
+      "category": "Auto",
+      "id": 1
+    },
+    {
+      "user_id": 3,
+      "tra_name": "Visa",
+      "curren": "48000",
+      "category": "Auto",
+      "id": 2
+    },
+    {
+      "user_id": 3,
+      "tra_name": "Visa",
+      "curren": "48800",
+      "category": "Auto",
+      "id": 3
+    }
+  ]
+}
