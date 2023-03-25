@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/style.scss">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1>Добавить кошелек</h1>
+        <form name="reg">
+            <input type="text" placeholder="Имя" name="name">
+            <input list="list" id="currency" name="currency">
+            <datalist id="list" >
+
+            </datalist>
+            <input type="number" placeholder="Сумма" name="total">
+            <button>Продолжить</button>
+        </form>
+        <a href="/pages/wallets.html">Назад</a>
+    </div>
+
+    <script type="module" src="/modules/addCard.js"></script>
+</body>
+</html>
