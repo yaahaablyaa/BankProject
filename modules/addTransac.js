@@ -1,6 +1,27 @@
 import axios from 'axios'
+import { getData } from './request.HTTP'
 let { id } = JSON.parse(localStorage.getItem('user'))
 let form = document.forms.addTransac
+let select = form.querySelector('select')
+
+////////////////////////////////////////////////////
+let user = JSON.parse(localStorage.getItem('user'))
+
+if (!user) {
+    location.assign('/pages/login.html')
+}
+////////////////////////////////////////////////////
+
+getData("/cards?user_id=" + user.id)
+    .then(res => createOpt(res.data))
+
+
+function createOpt(arr) {
+    for (let item of arr) {
+        let opt = new Option(item.card_name, item.card_name)
+        select.append(opt)
+    }
+}
 
 
 form.onsubmit = (e) => {
