@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<link rel="icon" type="image/svg+xml" href="/img/bank.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="/scss/style.scss">
-	<title>Vite App</title>
+	<title>Home</title>
 </head>
-
 <body>
 	<div id="app">
 		<header>
 			<nav>
 				<a href="#" class="main_btn">Главная </a>
 				<a href="/pages/wallets.html" class="wallet_btn">Мои кошельки</a>
-				<a href="#" class="transaction_btn">Мои транзакции</a>
+				<a href="/pages/transactions.html" class="transaction_btn">Мои транзакции</a>
 				<div class="wrapper">
 					<span class="usermail"></span>
 					<div class="logout_btn">
-						<img src="./img/log_out.svg" alt="log out image">
+						<img src="/img/log_out.svg" alt="log out image">
 					</div>
 				</div>
 			</nav>
 		</header>
 		<section class="info">
-			<h1 class="welcom">Добро Пожаловать</h1>
+			<h1 class="welcome">Добро Пожаловать</h1>
 			<a href="#" class="email"></a>
 			<div class="block_Card">
 				<p class="Card_main">Мои кошельки</p>
 				<div class="card_cont">
 
 				</div>
-				<a class="all_card" href="#">Смотреть все кошельки</a>
+				<a class="all_card" href="/pages/wallets.html">Смотреть все кошельки</a>
 			</div>
 			<div class="transactions">
 				<p class="a">Последние транзакции</p>
@@ -50,10 +48,15 @@
 
 					</tbody>
 				</table>
-				<a class="all_transactions" href="#">Смотреть все оплаты</a>
+				<a class="all_transactions" href="/pages/transactions.html">Смотреть все оплаты</a>
 			</div>
 		</section>
 	</div>
+	<script>
+		let user = JSON.parse(localStorage.getItem('user'))
+		let welcome = document.querySelector('.welcome')
+		welcome.innerHTML = 'Добро Пожаловать,' + ' ' + user.name + " " + user.surname + '!'
+	</script>
 	<script type="module" src="/main.js"></script>
 </body>
 
